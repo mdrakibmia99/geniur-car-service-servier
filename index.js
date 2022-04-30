@@ -49,6 +49,9 @@ app.post('/login',async(req,res)=>{
     res.send({accessToken});
 
 })
+app.get('/hero',(req,res)=>{
+    res.send('heroku meets hero ku')
+})
     // service api 
     app.get('/service',async(req,res)=>{
         const query ={};
